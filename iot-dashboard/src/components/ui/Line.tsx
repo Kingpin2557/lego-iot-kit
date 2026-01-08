@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { LineChart } from "@mui/x-chart/LineChart";
+import { LineChart } from "@mui/x-charts/LineChart";
 
 type DataPoint = {
     time: number;
