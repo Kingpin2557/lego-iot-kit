@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Replace hardcoded API URLs with environment variables in Button and SettingModal components.">
-      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Add `vercel.json` for rewriting all routes to `index.html`. Update `.idea/workspace.xml` to reflect task changes.">
+      <change afterPath="$PROJECT_DIR$/iot-dashboard/vercel.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767889606398</updated>
-      <workItem from="1767889607512" duration="6113000" />
+      <workItem from="1767889607512" duration="6600000" />
     </task>
     <task id="LOCAL-00001" summary="Remove web and docs applications including their associated files and configurations.">
       <option name="closed" value="true" />
@@ -181,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767894227967</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add `vercel.json` for rewriting all routes to `index.html`. Update `.idea/workspace.xml` to reflect task changes.">
+      <option name="closed" value="true" />
+      <created>1767896293359</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767896293359</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +207,7 @@
     <MESSAGE value="Replace hardcoded API URLs with environment variable-based URLs for better configurability." />
     <MESSAGE value="Remove applications `docs` and `web` directories" />
     <MESSAGE value="Replace hardcoded API URLs with environment variables in Button and SettingModal components." />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace hardcoded API URLs with environment variables in Button and SettingModal components." />
+    <MESSAGE value="Add `vercel.json` for rewriting all routes to `index.html`. Update `.idea/workspace.xml` to reflect task changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add `vercel.json` for rewriting all routes to `index.html`. Update `.idea/workspace.xml` to reflect task changes." />
   </component>
 </project>
