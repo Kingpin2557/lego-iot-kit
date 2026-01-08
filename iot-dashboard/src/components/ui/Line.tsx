@@ -29,7 +29,6 @@ function Line({ value, maxWindowSeconds = 20 }: LineProps) {
         });
     }, [value, maxWindowSeconds]);
 
-    if (history.length === 2) return <p>Wachten op data... (Huidige waarde: {value})</p>;
 
     return (
         <section className="c-section">

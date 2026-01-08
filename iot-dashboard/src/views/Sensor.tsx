@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 // @ts-ignore
 import Line from "../components/ui/Line.tsx";
 // @ts-ignore
-import OnOffSwitch from "../components/ui/OnOffSwitch.tsx";
+import Switch from "../components/ui/OnOffSwitch.tsx";
 
 type UserConfig = {
     name: string;
@@ -27,55 +27,78 @@ function Sensor() {
     const [sensorData, setSensorData] = useState<SensorData | null>(null);
     const location = useLocation();
 
+    // Functie definiëren om data op te halen (Lost TS2304 op)
     async function getSensorById(id: number) {
         try {
-            const response = await fetch(`${import.meta.env.VITE_APP_BASE_URL}/sensor/${id}`);
+            const baseUrl = import.meta.env.VITE_APP_BASE_URL || 'http://localhost:3000';
+            const response = await fetch(`${baseUrl}/sensor/${id}`);
             if (!response.ok) throw new Error(`Error: ${response.status}`);
 
             const data = await response.json();
-            setSensorData(data);
+            setSensorData(data); // Gebruik de setter (Lost TS6133 op)
         } catch (error) {
             console.error("Failed to fetch sensor:", error);
         }
     }
 
     useEffect(() => {
-        const id = location.state as number;
-        if (!id) return;
+        // Haal het ID uit de state die we via de Link hebben meegegeven
+        const id = (location.state as { sensorId?: number })?.sensorId;
+
+        if (!id) {
+            console.warn("Geen sensorId gevonden in location.state.");
+            return;
+        }
 
         getSensorById(id);
 
         const interval = setInterval(() => {
             getSensorById(id);
-        }, 200);
+        }, 500);
+
         return () => clearInterval(interval);
     }, [location.state]);
 
     if (!sensorData) return <p>Loading...</p>;
 
-    const dataObject = sensorData.sensor.data; // Dit is dus bijv. [42]
+    const dataObject = sensorData.sensor.data;
     const config = sensorData.sensor.userConfig;
-
-    // Haal de eerste waarde uit de array/object
-    const sensorValue = Array.isArray(dataObject) ? dataObject[0] : Object.values(dataObject)[0];
 
     return (
         <div>
             <h1>{config?.name}</h1>
             <div className="c-grid">
+                {Object.entries(dataObject).map(([uiKey, value]) => {
+                    // Check of de key in de data een index is (bijv "0")
+                    const isIndex = !isNaN(Number(uiKey));
+                    // Fallback naar config type als de API alleen array-indexen stuurt
+                    const lookupKey = isIndex
+                        ? (config?.type === "Sensor" ? "line" : "switch")
+                        : uiKey;
 
-                {/* OF als je de uiLookup tabel wilt blijven gebruiken: */}
-                {Object.entries(dataObject).map(([key, value]) => {
-                    // Forceer de lookup naar 'line' als het een sensor is,
-                    // of gebruik een mapping-logica die jij hebt gedefinieerd
-                    const Component = uiLookup["line"];
+                    const Component = uiLookup[lookupKey as keyof typeof uiLookup];
 
-                    return (
-                        <Component
-                            key={key}
-                            value={Number(value)}
-                        />
-                    );
+                    if (!Component) return null;
+
+                    if (lookupKey === "switch") {
+                        return (
+                            <Component
+                                key={uiKey}
+                                initialChecked={Boolean(value)}
+                            />
+                        );
+                    }
+
+                    if (lookupKey === "line") {
+                        return (
+                            <Component
+                                key={uiKey}
+                                value={Number(value)}
+                            />
+                        );
+                    }
+
+                    return <Component key={uiKey} value={value} />;
                 })}
             </div>
         </div>

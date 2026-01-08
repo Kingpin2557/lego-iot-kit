@@ -94,7 +94,12 @@ function Button({ sensor, icon = "gear", isNewSensor, onUpdate }: ButtonProps) {
     return (
         <>
             {hasConfig && !isNewSensor ? (
-                <Link to={`/${configSlug}`} state={sensor.id}>{content}</Link>
+                <Link
+                    to={`/${configSlug}`}
+                    state={{ sensorId: sensor.id }} // Geef het ID mee als object
+                >
+                    {content}
+                </Link>
             ) : (
                 <button onClick={handleClick}>{content}</button>
             )}
