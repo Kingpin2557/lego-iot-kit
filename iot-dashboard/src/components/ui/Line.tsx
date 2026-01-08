@@ -15,6 +15,7 @@ function Line({ value, maxWindowSeconds = 20 }: LineProps) {
     const [history, setHistory] = useState<DataPoint[]>([]);
     const startTimeRef = useRef<number>(performance.now());
 
+    console.log("hello")
     useEffect(() => {
         const now = performance.now();
         const elapsed = (now - startTimeRef.current) / 1000;
@@ -27,6 +28,8 @@ function Line({ value, maxWindowSeconds = 20 }: LineProps) {
             return next.filter((p) => p.time >= minTime);
         });
     }, [value, maxWindowSeconds]);
+
+    if (history.length === 2) return <p>Wachten op data... (Huidige waarde: {value})</p>;
 
     return (
         <section className="c-section">

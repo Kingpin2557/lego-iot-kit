@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Remove `package-lock.json` from the project." />
+    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Fix import statement in `Line.tsx` to use `@mui/x-charts/LineChart`.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/components/ui/Line.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/ui/Line.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/views/Sensor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/views/Sensor.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +52,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev (2).executor&quot;: &quot;Run&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;npm.format.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.tools.deep.seek.settings.CodeAssistSettingsConfigurable&quot;,
@@ -76,9 +81,19 @@
       <recent name="C:\Users\lodes\Desktop\artevelde\technology-1\lego-iot-kit.git" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev (1)">
+  <component name="RunManager" selected="npm.dev (2)">
     <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/sensor-routes/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/iot-dashboard/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -109,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev (2)" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.format" />
@@ -129,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767889606398</updated>
-      <workItem from="1767889607512" duration="7282000" />
+      <workItem from="1767889607512" duration="8210000" />
     </task>
     <task id="LOCAL-00001" summary="Remove web and docs applications including their associated files and configurations.">
       <option name="closed" value="true" />
@@ -203,7 +219,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767897325479</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add `@mui/x-charts` dependency and fix import in `Line.tsx`.">
+      <option name="closed" value="true" />
+      <created>1767897589407</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1767897589407</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix import statement in `Line.tsx` to use `@mui/x-charts/LineChart`.">
+      <option name="closed" value="true" />
+      <created>1767897668789</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1767897668789</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +255,8 @@
     <MESSAGE value="Add `vercel.json` for rewriting all routes to `index.html`. Update `.idea/workspace.xml` to reflect task changes." />
     <MESSAGE value="Remove `vercel.json` and update `.idea/workspace.xml` to reflect changes." />
     <MESSAGE value="Remove `package-lock.json` from the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove `package-lock.json` from the project." />
+    <MESSAGE value="Add `@mui/x-charts` dependency and fix import in `Line.tsx`." />
+    <MESSAGE value="Fix import statement in `Line.tsx` to use `@mui/x-charts/LineChart`." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix import statement in `Line.tsx` to use `@mui/x-charts/LineChart`." />
   </component>
 </project>

@@ -1,6 +1,10 @@
 import { useLocation } from "react-router-dom";
 import { uiLookup } from "../scripts/UiLookup.ts";
 import { useEffect, useState } from "react";
+// @ts-ignore
+import Line from "../components/ui/Line.tsx";
+// @ts-ignore
+import OnOffSwitch from "../components/ui/OnOffSwitch.tsx";
 
 type UserConfig = {
     name: string;
@@ -49,39 +53,29 @@ function Sensor() {
 
     if (!sensorData) return <p>Loading...</p>;
 
-    const dataObject = sensorData.sensor.data;
+    const dataObject = sensorData.sensor.data; // Dit is dus bijv. [42]
     const config = sensorData.sensor.userConfig;
-    console.log(config);
+
+    // Haal de eerste waarde uit de array/object
+    const sensorValue = Array.isArray(dataObject) ? dataObject[0] : Object.values(dataObject)[0];
 
     return (
         <div>
             <h1>{config?.name}</h1>
             <div className="c-grid">
-                {Object.entries(dataObject).map(([uiKey, value]) => {
-                    const lookupKey = uiKey as keyof typeof uiLookup;
-                    const Component = uiLookup[lookupKey];
 
-                    if (!Component) return null;
+                {/* OF als je de uiLookup tabel wilt blijven gebruiken: */}
+                {Object.entries(dataObject).map(([key, value]) => {
+                    // Forceer de lookup naar 'line' als het een sensor is,
+                    // of gebruik een mapping-logica die jij hebt gedefinieerd
+                    const Component = uiLookup["line"];
 
-                    if (lookupKey === "switch") {
-                        return (
-                            <Component
-                                key={uiKey}
-                                initialChecked={Boolean(value)} value={0}
-                            />
-                        );
-                    }
-
-                    if (lookupKey === "line") {
-                        return (
-                            <Component
-                                key={uiKey}
-                                value={Number(value)}
-                            />
-                        );
-                    }
-
-                    return null;
+                    return (
+                        <Component
+                            key={key}
+                            value={Number(value)}
+                        />
+                    );
                 })}
             </div>
         </div>
