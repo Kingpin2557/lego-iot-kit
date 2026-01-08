@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Remove web and docs applications including their associated files and configurations.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lego-iot-kit.git.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/eslint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/public/vite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/public/vite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/assets/react.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/assets/react.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/components/SensorType.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/SensorType.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/components/SettingModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/SettingModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/components/ui/Line.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/ui/Line.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/components/ui/OnOffSwitch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/ui/OnOffSwitch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/scripts/UiLookup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/scripts/UiLookup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/views/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/views/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/src/views/Sensor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/views/Sensor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/tsconfig.node.json" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/tsconfig.node.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/iot-dashboard/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/.idea/sensor-routes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/public/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/sensor-routes/vercel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config/next.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config/react-internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typescript-config/base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typescript-config/nextjs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typescript-config/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typescript-config/react-library.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ui/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ui/src/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ui/src/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ui/src/code.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ui/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Kingpin2557"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Kingpin2557/lego-iot-kit.git",
+    "accountId": "8541c6ff-83df-4f7a-8d10-b18128008eae"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="37yySf2SAIKkNZgC0hmbZmk3ibE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/lodes/Desktop/artevelde/technology-1/lego-iot-kit.git",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.format.executor": "Run",
+    "settings.editor.selected.configurable": "com.tools.deep.seek.settings.CodeAssistSettingsConfigurable",
+    "ts.external.directory.path": "C:\\Users\\lodes\\Desktop\\artevelde\\technology-1\\lego-iot-kit.git\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lodes\Desktop\artevelde\technology-1\lego-iot-kit.git" />
+      <recent name="C:\Users\lodes\Desktop\artevelde\technology-1\lego-iot-kit.git\apps" />
+      <recent name="C:\Users\lodes\Desktop\artevelde\technology-1\lego-iot-kit.git\apps\iot-dashboard" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lodes\Desktop\artevelde\technology-1\lego-iot-kit.git\apps" />
+      <recent name="C:\Users\lodes\Desktop\artevelde\technology-1\lego-iot-kit.git" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.format" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="" />
+      <created>1767889606398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767889606398</updated>
+      <workItem from="1767889607512" duration="2710000" />
+    </task>
+    <task id="LOCAL-00001" summary="Remove web and docs applications including their associated files and configurations.">
+      <option name="closed" value="true" />
+      <created>1767891315332</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767891315332</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up IoT Dashboard project with Vite, React, TypeScript, and core structure. Added sensor fetching, basic components, and UI initialization. Includes configurations and dependencies for development." />
+    <MESSAGE value="Remove applications `docs` and `web` directories" />
+    <MESSAGE value="Remove `apps/docs` and `apps/web` directories." />
+    <MESSAGE value="Remove web and docs applications including their associated files and configurations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove web and docs applications including their associated files and configurations." />
+  </component>
+</project>
