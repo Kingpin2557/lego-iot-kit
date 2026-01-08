@@ -67,7 +67,7 @@ function Button({ sensor, icon = "gear", isNewSensor, onUpdate }: ButtonProps) {
         if (!sensor?.id) return;
 
         try {
-            const response = await fetch(`https://sensor-routes.vercel.app/sensor/${sensor.id}`, {
+            const response = await fetch(`${import.meta.env.VITE_APP_BASE_URL}/sensor/${sensor.id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

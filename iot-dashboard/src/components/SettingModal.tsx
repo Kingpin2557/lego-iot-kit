@@ -18,7 +18,7 @@ function SettingModal({ show, onHide }: CustomModalProps) {
 
 
         try {
-            const response = await fetch(`https://sensor-routes.vercel.app/wifi`, {
+            const response = await fetch(`${import.meta.env.VITE_APP_BASE_URL}/wifi`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

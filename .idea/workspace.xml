@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Update `.idea/workspace.xml` to reflect project configuration changes.">
+    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Replace hardcoded API URLs with environment variable-based URLs for better configurability.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/views/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/views/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/views/Sensor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/views/Sensor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/components/SettingModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/SettingModal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +132,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767889606398</updated>
-      <workItem from="1767889607512" duration="3807000" />
+      <workItem from="1767889607512" duration="4080000" />
     </task>
     <task id="LOCAL-00001" summary="Remove web and docs applications including their associated files and configurations.">
       <option name="closed" value="true" />
@@ -166,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767893209882</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Replace hardcoded API URLs with environment variable-based URLs for better configurability.">
+      <option name="closed" value="true" />
+      <created>1767893961077</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767893961077</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +189,7 @@
     <MESSAGE value="ADded dashboard api and arduino sketches to the same repo" />
     <MESSAGE value="Add `.idea/workspace.xml` for JetBrains IDE project configuration" />
     <MESSAGE value="Update `.idea/workspace.xml` to reflect project configuration changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update `.idea/workspace.xml` to reflect project configuration changes." />
+    <MESSAGE value="Replace hardcoded API URLs with environment variable-based URLs for better configurability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace hardcoded API URLs with environment variable-based URLs for better configurability." />
   </component>
 </project>
