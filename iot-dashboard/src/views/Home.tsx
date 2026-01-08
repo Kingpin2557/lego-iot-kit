@@ -37,7 +37,7 @@ function Home() {
 
     const loadData = async () => {
         try {
-            const data = await fetchData(`https://sensor-routes.vercel.app/sensors`);
+            const data = await fetchData(`${import.meta.env.VITE_APP_BASE_URL}/sensors`);
             setSensorData(data);
         } catch (err) {
             setError(err as Error);

@@ -25,7 +25,7 @@ function Sensor() {
 
     async function getSensorById(id: number) {
         try {
-            const response = await fetch(`https://sensor-routes.vercel.app/sensor/${id}`);
+            const response = await fetch(`${import.meta.env.VITE_APP_BASE_URL}/sensor/${id}`);
             if (!response.ok) throw new Error(`Error: ${response.status}`);
 
             const data = await response.json();
