@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Refactor `Sensor.tsx` component to simplify UI mapping logic and add new UI components (`Line`, `OnOffSwitch`).">
+    <list default="true" id="ca14ff77-14a8-43bc-94e5-6284bc8d7b58" name="Changes" comment="Refactor `Button.tsx` and `Sensor.tsx` to improve state handling, simplify UI mapping logic, and enhance data fetching reliability.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/components/ui/Line.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/components/ui/Line.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-dashboard/src/views/Sensor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/iot-dashboard/src/views/Sensor.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +143,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767889606398</updated>
-      <workItem from="1767889607512" duration="9715000" />
+      <workItem from="1767889607512" duration="10928000" />
+      <workItem from="1768131379453" duration="7000" />
+      <workItem from="1768137296251" duration="547000" />
     </task>
     <task id="LOCAL-00001" summary="Remove web and docs applications including their associated files and configurations.">
       <option name="closed" value="true" />
@@ -244,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767898433820</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactor `Button.tsx` and `Sensor.tsx` to improve state handling, simplify UI mapping logic, and enhance data fetching reliability.">
+      <option name="closed" value="true" />
+      <created>1767899958511</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1767899958511</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +274,7 @@
     <MESSAGE value="Add `@mui/x-charts` dependency and fix import in `Line.tsx`." />
     <MESSAGE value="Fix import statement in `Line.tsx` to use `@mui/x-charts/LineChart`." />
     <MESSAGE value="Refactor `Sensor.tsx` component to simplify UI mapping logic and add new UI components (`Line`, `OnOffSwitch`)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor `Sensor.tsx` component to simplify UI mapping logic and add new UI components (`Line`, `OnOffSwitch`)." />
+    <MESSAGE value="Refactor `Button.tsx` and `Sensor.tsx` to improve state handling, simplify UI mapping logic, and enhance data fetching reliability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor `Button.tsx` and `Sensor.tsx` to improve state handling, simplify UI mapping logic, and enhance data fetching reliability." />
   </component>
 </project>
